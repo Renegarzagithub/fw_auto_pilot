@@ -1,5 +1,6 @@
 Flyway Autopilot allows you to trial an end-to-end database development and automated deployment process with very little setup.  With Flyway AutoPilot for PostgreSQL, you get: 
 
+## What's Included
 1. Two SQL scripts to create the required sample databases (`1-create_autopilot_databases.sql`) and populate each with the initial schema (`2-create_initial_database_schema.sql`)
 2. A pre-configured Flyway project to get started quickly
 3. Integration with version control to track your changes and collaborate with a team
@@ -14,5 +15,7 @@ Flyway Autopilot allows you to trial an end-to-end database development and auto
 3. A GitHub account
 4. `git` tooling installed locally and accessible in your path.
 5. Flyway Enterprise installed and activated locally. This can be a trial or fully licensed version.
+
+
 
 **Check out the [documentation to get started](https://documentation.red-gate.com/fd/quickstart-flyway-autopilot-215154689.html)**.
