@@ -16,6 +16,13 @@ Flyway Autopilot allows you to trial an end-to-end database development and auto
 4. `git` tooling installed locally and accessible in your path.
 5. Flyway Enterprise installed and activated locally. This can be a trial or fully licensed version.
 
+## Getting your environment setup
+To follow along with the Quickstart guide linked below, you need to run the two SQL scripts included in the repository.
 
+1. Connect to any database with a user that has the `CREATEDB` privilege (the `postgres` user in the Docker container does).
+2. Execute the `1-create_autopilot_databases.sql` script to create all of the databases used in this Quickstart sample. All databases start with the name `widget`.
+3. Now one by one, connect to each of the `widget` databases and execute the `2-create_initial_database_schema.sql` scripts. This will create a few tables, a view, and a function.
+
+You're now ready to follow the rest of the Quickstart, which includes setting up a local GitHub Actions runner to see the CI/CD pipeline work with your local databases.
 
 **Check out the [documentation to get started](https://documentation.red-gate.com/fd/quickstart-flyway-autopilot-215154689.html)**.
