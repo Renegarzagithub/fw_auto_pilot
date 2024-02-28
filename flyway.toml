@@ -22,7 +22,7 @@ baselineVersion = "001_20240221160237"
 baselineOnMigrate = true
 
 [environments.development]
-url = "jdbc:postgresql://localhost:5434/widgetdev"
+url = "jdbc:postgresql://localhost:5432/widgetdev"
 schemas = [ "public" ]
 displayName = "Development database"
 
