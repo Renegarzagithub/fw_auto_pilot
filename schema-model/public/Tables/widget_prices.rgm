@@ -19,6 +19,9 @@ table "public"."widget_prices" {
     column "price" {
       type = real
     }
+    column "Update" {
+      type = character varying
+    }
   )
 }
 
