@@ -27,7 +27,7 @@ schemas = [ "public" ]
 displayName = "Development database"
 
 [environments.shadow]
-url = "jdbc:postgresql://localhost:5434/widgetshadow"
+url = "jdbc:postgresql://localhost:5432/widgetshadow"
 schemas = [ "public" ]
 displayName = "Shadow database"
 provisioner = "clean"
