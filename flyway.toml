@@ -38,7 +38,7 @@ schemas = [ "public" ]
 displayName = "Test"
 
 [environments.Prod]
-url = "jdbc:postgresql://localhost:5434/widgetprod"
+url = "jdbc:postgresql://localhost:5432/widgetprod"
 schemas = [ "public" ]
 displayName = "Production"
 

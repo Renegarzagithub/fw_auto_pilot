@@ -1,0 +1,32 @@
+procedure "public"."create_invoice(text, numeric, date)" {
+  text = """
+
+BEGIN
+  INSERT INTO widget_invoices (customer_name, total_amount, invoice_date)
+  VALUES (customer_name, total_amount, invoice_date);
+END;
+"""
+  arguments = <
+    {
+      name = customer_name
+      type = text
+      mode = IN
+    }
+
+    {
+      name = total_amount
+      type = numeric
+      mode = IN
+    }
+
+    {
+      name = invoice_date
+      type = date
+      mode = IN
+    }
+
+  >
+  language = plpgsql
+  owner = postgres
+}
+
