@@ -17,6 +17,9 @@ table "public"."widgets" {
       type = text
       null = NOT NULL
     }
+    column "new_column" {
+      type = character varying
+    }
   )
 }
 

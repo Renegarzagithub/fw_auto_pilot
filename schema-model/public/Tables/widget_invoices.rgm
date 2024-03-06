@@ -1,0 +1,34 @@
+table "public"."widget_invoices" {
+  primaryKey = {
+    columns = [
+      "invoice_id"
+    ]
+    name = "widget_invoices_pkey"
+    objectType = primaryKey
+  }
+  owner = postgres
+  columns = (
+    column "invoice_id" {
+      type = bigint
+      null = NOT NULL
+      generatedAsIdentity = BY DEFAULT
+    }
+    column "customer_name" {
+      type = text
+      null = NOT NULL
+    }
+    column "total_amount" {
+      type = numeric(9,2)
+      null = NOT NULL
+    }
+    column "invoice_date" {
+      type = date
+      null = NOT NULL
+    }
+    column "is_paid" {
+      type = boolean
+      default = false
+    }
+  )
+}
+
